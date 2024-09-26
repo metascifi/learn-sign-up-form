@@ -2,11 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <p>Bebra</p>
+    <aside>
+        <div>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="odin-logo">
+            </div>
+            <p>ODIN</p>
+        </div>
+        <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com">Unsplash</a></p>
+    </aside>
+    <main>
+        <div class="container info-section">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br/>Sign ip <span class="emphasized">now</span> to get started.</p>
+            <p>You <span class="emphasized">know</span> you want to.</p>
+        </div>
+        <div class="container form-section">
+            <form action="" method="post">
+                <div class="input-container">
+                    <h2>Let's do this!</h2>
+                    <div class="form-rows">
+                        <div class="form-row">
+                            <div class="input">
+                                <label for="fname">First name</label>
+                                <input type="text" id="fname" name="firstName" pattern="[A-Za-z]{3,45}"  required>
+                            </div>
+                            <div class="input">
+                                <label for="lname">Last name</label>
+                                <input type="text" id="lname" name="lastName" pattern="[A-Za-z]{3,75}" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="usermail" pattern="\w{1,}@\w{1,}.[a-z]{1,10}" required>
+                            </div>
+                            <div class="input">
+                                <label for="phone">Phone number</label>
+                                <input type="tel" id="phone" name="phoneNum" pattern="+?\d{10, 12}" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input">
+                                <label for="pwd">Password</label>
+                                <input type="password" id="pwd" name="pwd" pattern="\[a-zA-Z0-9^&#62]{8, 20}" required>
+                            </div>
+                            <div class="input">
+                                <label for="pwdrepeat">Confirm password</label>
+                                <input type="password" id="pwdrepeat" name="repeatedPassword" pattern="\[a-zA-Z0-9^&#62]{8, 20}" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <button type="submit" class="button">Create Account</button>
+                </div>
+            </form>
+        </div>
+        <div class="container tip-section">
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </main>
 </body>
 </html>
