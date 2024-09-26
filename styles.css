@@ -45,9 +45,14 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     display: flex;
     background-color: var(--main-background-color);
+    min-height: 100%;
 }
 
 aside {
